@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11100f">
+  <meta name="description" content="Discover thoughtfully crafted digital guides, study notes, and templates at RohitX Store.">
+  <title>RohitX Store — Digital goods, made better</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="RohitX Store home">
+        <img class="brand-logo" src="logo.png/file_0000000076188211b749c2a5226aada7.png" alt="RohitX Store">
+        <span class="brand-name">RohitX <span class="brand-store">Store</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#why-us">Why RohitX</a>
+        <a href="#newsletter">Updates</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="auth-trigger" id="auth-trigger" type="button" aria-label="Sign in to your account">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg>
+          <span id="auth-trigger-label">Sign in</span>
+        </button>
+        <button class="cart-trigger" id="cart-trigger" type="button" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+          <span>Cart</span>
+          <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> YOUR NEXT BIG IDEA STARTS HERE</div>
+          <h1 id="hero-title">Make room for<br>your <span>next level.</span></h1>
+          <p>Practical e-books, study notes, and templates to help you learn, plan, and get your next idea moving.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#shop">Shop all products <span aria-hidden="true">↗</span></a>
+            <div class="social-proof"><div class="avatar-stack" aria-hidden="true"><i>R</i><i>A</i><i>M</i></div><span>Made for your momentum</span></div>
+          </div>
+          <div class="hero-footnote"><span aria-hidden="true">✳</span> Browse digital products <span class="footnote-divider">·</span> Sample store</div>
+        </div>
+
+        <div class="hero-art" aria-label="Featured collection: The Creator's Playbook">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-glow"></div>
+          <div class="floating-note note-top"><span class="note-icon">✦</span><span><b>Ideas, meet action.</b><small>Your next chapter awaits</small></span></div>
+          <div class="showcase-book">
+            <div class="book-topline">ROHITX FIELD NOTES <span>№ 01</span></div>
+            <div class="book-spark">✳</div>
+            <div class="book-title">THE<br>CREATOR'S<br><span>PLAYBOOK</span></div>
+            <div class="book-bottom"><span>THINK CLEARER. MAKE MORE.</span><span class="book-monogram">Rx</span></div>
+          </div>
+          <div class="floating-note note-bottom"><span class="note-chart" aria-hidden="true">↗</span><span><b>Built for real life</b><small>Simple tools, big energy</small></span></div>
+          <div class="hero-art-caption">THE CREATOR COLLECTION <span>2025 — 2026</span></div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">R<span>X</span></div>
+      </section>
+
+      <section class="shop-section section-wrap" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">BROWSE THE STORE</div>
+            <h2 id="shop-title">Shop digital <span>products.</span></h2>
+            <p>Choose a category or search for something specific.</p>
+          </div>
+          <label class="search-box" for="product-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+            <input id="product-search" type="search" placeholder="Search e-books, notes, templates..." autocomplete="off">
+            <span class="search-shortcut" aria-hidden="true">⌕</span>
+          </label>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="category-list" id="category-filters" aria-label="Filter products by category"></div>
+          <span class="results-count" id="results-count" aria-live="polite"></span>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="empty-results" id="empty-results" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>No matches this time.</h3>
+          <p>Try another search or choose a different category.</p>
+          <button class="text-button" id="clear-filters" type="button">Clear filters <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Store highlights">
+        <span><b>01</b> Made with intention</span><span class="trust-separator"></span>
+        <span><b>02</b> Sample digital products</span><span class="trust-separator"></span>
+        <span><b>03</b> Practical by design</span><span class="trust-separator"></span>
+        <span><b>04</b> Demo store</span>
+      </section>
+
+      <section class="why-section section-wrap" id="why-us">
+        <div class="why-intro">
+          <div class="eyebrow">A LITTLE MORE INTENTION</div>
+          <h2>Good ideas deserve<br><span>good tools.</span></h2>
+          <p>Skip the noise. Find useful, well-made resources that make getting started feel a whole lot easier.</p>
+          <a class="text-button" href="#shop">Meet your next favorite <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="value-cards">
+          <article class="value-card"><span class="value-icon icon-lilac">✳</span><span class="value-number">01 / MADE TO USE</span><h3>Less fluff.<br>More forward.</h3><p>Clear, practical resources designed to make your next step feel simple.</p></article>
+          <article class="value-card"><span class="value-icon icon-blue">↗</span><span class="value-number">02 / READY WHEN YOU ARE</span><h3>Your ideas.<br>Your timeline.</h3><p>Digital products are available to explore whenever inspiration shows up.</p></article>
+          <article class="value-card"><span class="value-icon icon-pink">♡</span><span class="value-number">03 / GOOD ENERGY ONLY</span><h3>Made for the<br>long game.</h3><p>Thoughtful starting points to help you learn, create, and keep growing.</p></article>
+        </div>
+      </section>
+
+      <section class="newsletter-section section-wrap" id="newsletter">
+        <div class="newsletter-orb" aria-hidden="true"></div>
+        <div class="newsletter-copy"><div class="eyebrow">A NOTE FROM ROHITX</div><h2>A little inspiration,<br><span>now and then.</span></h2><p>Get occasional store updates and new-release news. No noise, just the good stuff.</p></div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email">Your email address</label>
+          <div class="email-entry"><input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required><button type="submit" aria-label="Sign up for store updates">Join the list <span aria-hidden="true">↗</span></button></div>
+          <p class="form-message" id="newsletter-message" aria-live="polite">Demo form only — nothing will be sent or stored.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-main">
+        <section class="footer-column footer-about" id="about">
+          <a class="brand footer-brand" href="#" aria-label="RohitX Store home"><img class="brand-logo" src="logo.png/file_0000000076188211b749c2a5226aada7.png" alt=""><span class="brand-name">RohitX <span class="brand-store">Store</span></span></a>
+          <p>A demo digital store concept featuring sample guides, study notes, and templates for curious minds.</p>
+          <span class="footer-note">A DEMO STORE · NO REAL PAYMENTS</span>
+        </section>
+
+        <nav class="footer-column" aria-label="Explore">
+          <h2>Explore</h2>
+          <a href="#shop">All products</a>
+          <a href="#why-us">Why RohitX</a>
+          <a href="#newsletter">Store updates</a>
+        </nav>
+
+        <section class="footer-column footer-information" aria-labelledby="footer-information-title">
+          <h2 id="footer-information-title">Good to know</h2>
+          <details class="footer-disclosure" id="terms">
+            <summary>Terms &amp; conditions</summary>
+            <div class="footer-disclosure-copy">
+              <p><strong>This is a demonstration website.</strong> Product descriptions and prices are sample content. The cart is for demonstration only: checkout is unavailable, no order is placed, no payment is taken, and no digital product is delivered.</p>
+              <p>Do not rely on this demo as an offer to sell or as a completed purchase. Before using this site for real sales, the store owner should provide accurate product and pricing information, delivery details, refund rules, and terms that apply to their business.</p>
+            </div>
+          </details>
+          <details class="footer-disclosure" id="privacy">
+            <summary>Privacy</summary>
+            <div class="footer-disclosure-copy">
+              <p>Local accounts are stored in a SQLite database on the computer running this site. Passwords are stored as salted scrypt hashes, not plain text. Signing in uses an HttpOnly session cookie.</p>
+              <p>This local site does not send verification emails or newsletter email addresses. Submitting the sample newsletter form only displays a message in your browser.</p>
+              <p>Your demo cart is saved in this browser's local storage so it can remain between visits. It is not sent to a store server by this page. You can clear it through your browser's site-data settings.</p>
+              <p>Keep the server on this computer only. This local setup is not configured for public hosting or production customer accounts.</p>
+            </div>
+          </details>
+          <details class="footer-disclosure" id="contact">
+            <summary>Contact</summary>
+            <div class="footer-disclosure-copy">
+              <p>No support email or contact channel is configured for this demo. Add your real business contact details here before publishing a live store.</p>
+            </div>
+          </details>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Digital goods for your next big thing.</span>
+        <span>Sample content · No real purchases</span>
+        <span class="copyright">© 2026 ROHITX</span>
+      </div>
+    </footer>
+  </div>
+
+  <dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
+    <button class="dialog-close auth-close" type="button" data-close-dialog aria-label="Close account dialog">×</button>
+    <div class="auth-content">
+      <div class="auth-emblem" aria-hidden="true">Rx</div>
+      <div class="eyebrow">ROHITX ACCOUNT</div>
+      <h2 id="auth-title">Welcome back</h2>
+      <p class="auth-description" id="auth-description">Sign in to your local store account.</p>
+      <div class="auth-tabs" id="auth-tabs" role="tablist" aria-label="Account access">
+        <button class="auth-tab active" id="auth-login-tab" type="button" role="tab" aria-selected="true" aria-controls="auth-form" data-auth-mode="login">Sign in</button>
+        <button class="auth-tab" id="auth-register-tab" type="button" role="tab" aria-selected="false" aria-controls="auth-form" data-auth-mode="register">Create account</button>
+      </div>
+      <form class="auth-form" id="auth-form">
+        <label class="auth-field" id="auth-name-field" for="auth-name" hidden>
+          <span>Your name</span>
+          <input id="auth-name" name="name" type="text" autocomplete="name" maxlength="60" placeholder="Your name">
+        </label>
+        <label class="auth-field" for="auth-email">
+          <span>Email address</span>
+          <input id="auth-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+        </label>
+        <label class="auth-field" for="auth-password">
+          <span>Password</span>
+          <input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" placeholder="At least 12 characters" required>
+        </label>
+        <p class="auth-password-hint" id="auth-password-hint">Use the password you chose when creating your account.</p>
+        <p class="auth-message" id="auth-message" role="alert" aria-live="polite" hidden></p>
+        <button class="button button-primary auth-submit" id="auth-submit" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+      </form>
+      <section class="account-panel" id="account-panel" aria-live="polite" hidden>
+        <div class="account-avatar" id="account-avatar" aria-hidden="true">R</div>
+        <h3 id="account-name"></h3>
+        <p id="account-email"></p>
+        <p class="account-note">Your account is stored on this computer.</p>
+        <button class="button auth-signout" id="auth-signout" type="button">Sign out</button>
+      </section>
+      <p class="auth-footnote">Local account · Passwords are securely hashed · No email is sent</p>
+    </div>
+  </dialog>
+
+  <dialog class="details-dialog" id="details-dialog" aria-labelledby="details-title">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="Close product details">×</button>
+    <div class="details-content" id="details-content"></div>
+  </dialog>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-panel">
+      <div class="cart-header"><div><div class="eyebrow">YOUR SHORTLIST</div><h2 id="cart-title">Your cart <span id="cart-title-count">(0)</span></h2></div><button class="dialog-close cart-close" type="button" data-close-dialog aria-label="Close cart">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div>
+        <p>Demo cart only. No payment is taken and no purchase is made.</p>
+        <button class="button button-primary cart-demo-button" id="cart-demo-button" type="button">Demo checkout unavailable</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
